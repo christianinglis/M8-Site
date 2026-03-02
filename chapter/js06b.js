@@ -4,12 +4,19 @@
       Chapter case
 
       Order Form Code
-      Author: 
-      Date:   
+      Author: Christian Inglis
+      Date:  3/2/2026 
 
       Filename: js06b.js
  */
-
+function validateName() {
+   let cardName = document.getElementById("cardName");
+   if (cardName.validity.valueMissing) {
+      cardName.setCustomValidity("Enter your name as it appears on the card");
+   } else {
+      cardName.setCustomValidity("");
+   }
+}
 
 
 
